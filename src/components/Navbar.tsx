@@ -17,6 +17,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [hovered, setHovered] = useState<number | null>(null);
     const [hash, setHash] = useState<string>("#home");
+    const [isDarkText, setIsDarkText] = useState(false);
 
     useEffect(() => {
         if (typeof window === "undefined") return;
@@ -24,12 +25,42 @@ const Navbar = () => {
         const handleHashChange = () => {
             setHash(window.location.hash || "#home");
         };
-
         handleHashChange();
 
         window.addEventListener("hashchange", handleHashChange);
 
+        const handleScroll = () => {
+            const homeSection = document.querySelector("#home");
+            const otherSections = document.querySelectorAll("section, div[id]:not(#home)");
+
+            const triggerHeight = window.innerHeight * 0.25;
+            let inNonHome = false;
+
+            otherSections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= triggerHeight && rect.bottom >= triggerHeight) {
+                    inNonHome = true;
+                }
+            });
+
+            const homeRect = homeSection?.getBoundingClientRect();
+            const isHomeVisible =
+                homeRect &&
+                homeRect.top <= window.innerHeight * 0.75 &&
+                homeRect.bottom >= window.innerHeight * 0.25;
+
+            if (isHomeVisible) {
+                setIsDarkText(false);
+            } else {
+                setIsDarkText(inNonHome);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); 
+
         return () => {
+            window.removeEventListener("scroll", handleScroll);
             window.removeEventListener("hashchange", handleHashChange);
         };
     }, []);
@@ -41,9 +72,9 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 80, damping: 12 }}
-            className="fixed top-2 left-0 w-full z-50 scroll-smooth"
+            className="fixed top-2 left-0 w-full z-50"
         >
-            <div className=" mx-auto px-6 sm:px-8 flex justify-between items-center h-16 bg-transparent">
+            <div className="mx-auto px-6 sm:px-8 flex justify-between items-center h-16 bg-transparent transition-colors duration-300">
                 <motion.div
                     whileHover={{ scale: 1.05 }}
                     className="cursor-pointer flex items-center gap-2 lg:ml-20"
@@ -51,13 +82,17 @@ const Navbar = () => {
                     <Image
                         src={require("../../public/images/logo.png")}
                         alt="Logo"
-                        width={100} 
+                        width={100}
                         height={100}
                         className="object-contain"
                     />
                 </motion.div>
 
-                <ul className="hidden md:flex space-x-10 text-white relative">
+                {/* 👇 Dynamic color change applied here */}
+                <ul
+                    className={`hidden md:flex space-x-10 transition-colors duration-300 ${isDarkText ? "text-black" : "text-white"
+                        }`}
+                >
                     {navItems.map((item, index) => (
                         <motion.li
                             key={item.name}
@@ -85,7 +120,8 @@ const Navbar = () => {
                 {!isOpen && (
                     <motion.button
                         whileTap={{ scale: 0.9 }}
-                        className="md:hidden p-2 text-white"
+                        className={`md:hidden p-2 transition-colors duration-300 ${isDarkText ? "text-black" : "text-white"
+                            }`}
                         onClick={() => setIsOpen(true)}
                     >
                         <FiMenu size={26} />
@@ -103,10 +139,7 @@ const Navbar = () => {
                         className="fixed top-0 right-0 h-full w-64 bg-[#0000B333]/30 backdrop-blur-2xl shadow-2xl border-l border-white/20 md:hidden flex flex-col"
                     >
                         <div className="flex justify-end p-4">
-                            <motion.button
-                                whileTap={{ scale: 0.9 }}
-                                onClick={() => setIsOpen(false)}
-                            >
+                            <motion.button whileTap={{ scale: 0.9 }} onClick={() => setIsOpen(false)}>
                                 <FiX size={26} className="text-white" />
                             </motion.button>
                         </div>

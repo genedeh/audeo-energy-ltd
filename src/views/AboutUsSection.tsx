@@ -41,37 +41,31 @@ const AboutUsSection = () => {
             </motion.div>
 
             <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 0.3 }}
+                initial={{ x: 50 }}
+                animate={{
+                    x: 0,
+                    scale: [1, 1.05, 0.95, 1.03, 1], 
+                }}
+                transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                }}
                 className="relative md:w-1/2 w-full flex justify-center items-center mt-10 md:mt-0"
             >
-                <div className="relative w-[280px] md:w-[360px] h-[420px] bg-gray-200 overflow-hidden droplet-shape shadow-xl">
+                <motion.div
+                    className="relative w-[360px] md:w-[460px] h-[640px] overflow-hidden droplet-shape bg-transparent"
+                >
                     <Image
-                        src={require("../../public/images/droplet-img.jpg")}
+                        src={require("../../public/images/droplet-img.png")}
                         alt="Large Droplet"
                         fill
                         className="object-cover"
                     />
-                </div>
-
-                <div className="absolute top-6 right-8 w-[120px] md:w-40 h-[180px] bg-gray-100 overflow-hidden droplet-shape shadow-lg">
-                    <Image
-                        src={require("../../public/images/droplet-img.jpg")}
-                        alt="Small Droplet"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
+                </motion.div>
             </motion.div>
 
-            <style jsx>{`
-                .droplet-shape {
-                    clip-path: path(
-                        "M 50% 0 C 70% 10%, 90% 40%, 100% 65% C 100% 85%, 80% 100%, 50% 100% C 20% 100%, 0 85%, 0 65% C 10% 40%, 30% 10%, 50% 0 Z"
-                    );
-                }
-            `}</style>
+
         </section>
     );
 };

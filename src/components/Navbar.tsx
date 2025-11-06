@@ -10,7 +10,7 @@ const navItems = [
     { name: "About Us", icon: <FiInfo />, link: "#about" },
     { name: "Our Services", icon: <FiTool />, link: "#ourservices" },
     { name: "Our People", icon: <FiUser />, link: "#ourpeople" },
-    { name: "Contact us", icon: <FiPhoneCall />, link: "#contact us" },
+    { name: "Contact us", icon: <FiPhoneCall />, link: "#contactus" },
 ];
 
 const Navbar = () => {
@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className=" mx-auto px-6 sm:px-8 flex justify-between items-center h-16 bg-transparent">
                 <motion.div
                     whileHover={{ scale: 1.05 }}
-                    className="cursor-pointer flex items-center gap-2"
+                    className="cursor-pointer flex items-center gap-2 lg:ml-20"
                 >
                     <Image
                         src={require("../../public/images/logo.png")}
@@ -65,7 +65,7 @@ const Navbar = () => {
                             onHoverEnd={() => setHovered(null)}
                             whileHover={{ scale: 1.08, y: -2 }}
                             transition={{ type: "spring", stiffness: 250, damping: 10 }}
-                            className={`relative cursor-pointer ${item.link === hash ? "text-[#000051] font-semibold" : ""
+                            className={`relative cursor-pointer ${item.link === hash ? "text-[#FF7F01] font-semibold" : ""
                                 }`}
                         >
                             <a href={item.link} className="transition-all duration-200">
@@ -85,7 +85,7 @@ const Navbar = () => {
                 {!isOpen && (
                     <motion.button
                         whileTap={{ scale: 0.9 }}
-                        className="md:hidden p-2 text-black"
+                        className="md:hidden p-2 text-white"
                         onClick={() => setIsOpen(true)}
                     >
                         <FiMenu size={26} />
@@ -107,17 +107,17 @@ const Navbar = () => {
                                 whileTap={{ scale: 0.9 }}
                                 onClick={() => setIsOpen(false)}
                             >
-                                <FiX size={26} className="text-black" />
+                                <FiX size={26} className="text-white" />
                             </motion.button>
                         </div>
 
-                        <ul className="flex flex-col items-start space-y-6 mt-8 pl-8 text-lg font-medium text-black">
+                        <ul className="flex flex-col items-start space-y-6 mt-8 pl-8 text-lg font-medium text-white">
                             {navItems.map((item, i) => (
                                 <motion.li
                                     key={item.name}
                                     whileHover={{ scale: 1.05, x: 6 }}
                                     transition={{ type: "spring", stiffness: 250, damping: 15 }}
-                                    className={`cursor-pointer flex items-center gap-4 ${item.link === hash ? "text-[#000051] font-semibold" : ""
+                                    className={`cursor-pointer flex items-center gap-4 ${item.link === hash ? "text-[#FF7F01] font-semibold" : ""
                                         }`}
                                 >
                                     <a

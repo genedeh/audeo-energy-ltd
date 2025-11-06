@@ -23,7 +23,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-white global-font min-h-screen pt-16"  >
+      <body className="bg-white global-font min-h-screen"  >
         <Navbar />
         <main>
           {children}

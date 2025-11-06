@@ -1,74 +1,63 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaOilCan, FaTruckMoving, FaShieldAlt } from "react-icons/fa";
 
 const HomeSection = () => {
     return (
-        <section className="relative w-full h-screen flex flex-col justify-center overflow-hidden text-white">
-            <Image
-                src={require("../../public/images/hero-image.jpg")}
-                alt="Petroleum Tanks"
-                fill
-                priority
-                className="object-cover brightness-[0.55] -z-10"
-            />
-
-            <div className="relative z-10 flex flex-col justify-center px-6 md:px-16 lg:px-24 max-w-7xl">
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
+        <section className="relative w-full bg-transparent text-black py-20 px-6 md:px-16 lg:px-24 flex justify-start">
+            <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-white text-sm md:text-base uppercase font-medium mb-2"
+                    viewport={{ once: true }}
+                    className="flex justify-center"
                 >
-                    Energy You Can Rely On
-                </motion.p>
+                    <div className="bg-[#0A0068] w-[310px] h-[310px] rounded-2xl flex items-center justify-center">
+                        <Image
+                            src="/icons/image-placeholder.svg" 
+                            alt="Audeo Energy Illustration"
+                            width={128}
+                            height={128}
+                            className="opacity-60"
+                        />
+                    </div>
+                </motion.div>
 
-                <motion.h1
-                    initial={{ opacity: 0, x: -40 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1 }}
-                    className="text-3xl md:text-5xl font-bold leading-tight max-w-xl"
+                {/* Right Text Section */}
+                <motion.div
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
                 >
-                    Trusted Petroleum Solutions for a Growing World
-                </motion.h1>
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                        Welcome to{" "}
+                        <span className="inline-flex items-center">
+                            <Image
+                                src={require("../../public/images/logo.png")}
+                                alt="Audeo Energy Logo"
+                                width={120}
+                                height={40}
+                                className="inline-block ml-2"
+                            />
+                        </span>
+                    </h2>
 
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2 }}
-                    className="text-gray-200 mt-4 max-w-md"
-                >
-                    We&apos;re committed to delivering world-class petroleum products that
-                    support growth, development, and progress across industries and
-                    communities.
-                </motion.p>
+                    <p className="text-gray-700 leading-relaxed mb-4">
+                        At Audeo Energy Ltd, we are committed to powering progress across
+                        Africa through reliable, efficient, and accessible petroleum and
+                        energy solutions.
+                    </p>
+
+                    <p className="text-gray-700 leading-relaxed">
+                        We take pride in being a trusted partner in the supply and
+                        distribution of high-quality petroleum products, ensuring that
+                        businesses, industries, and communities receive the energy they need
+                        to grow and thrive.
+                    </p>
+                </motion.div>
             </div>
-
-            <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8, duration: 0.8 }}
-                className="absolute -bottom-20 right-6 md:right-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 z-20"
-            >
-                {[
-                    { icon: <FaOilCan size={28} />, title: "Quality Assurance" },
-                    { icon: <FaTruckMoving size={28} />, title: "Reliable Supply" },
-                    { icon: <FaShieldAlt size={28} />, title: "Safety & Compliance" },
-                ].map((item, index) => (
-                    <motion.div
-                        key={index}
-                        whileHover={{ scale: 1.05, y: -5 }}
-                        whileTap={{ scale: 0.97 }}
-                        className="flex flex-col items-center justify-center bg-white text-black rounded-2xl border-l-3 border-l-[#2D0084] shadow-lg px-6 py-5 w-60"
-                    >
-                        <div className="text-[#2D0084] mb-2">{item.icon}</div>
-                        <p className="text-sm md:text-base font-semibold text-center">
-                            {item.title}
-                        </p>
-                    </motion.div>
-                ))}
-            </motion.div>
         </section>
     );
 };

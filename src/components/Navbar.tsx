@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const navItems = [
     { name: "Home", icon: <FiHome />, link: "#home" },
-    { name: "About Us", icon: <FiInfo />, link: "#about" },
+    { name: "About Us", icon: <FiInfo />, link: "#aboutus" },
     { name: "Our Services", icon: <FiTool />, link: "#ourservices" },
     { name: "Our People", icon: <FiUser />, link: "#ourpeople" },
     { name: "Contact us", icon: <FiPhoneCall />, link: "#contactus" },

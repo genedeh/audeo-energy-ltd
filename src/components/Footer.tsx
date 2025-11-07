@@ -36,7 +36,7 @@ const Footer = () => {
                     {["Trading & Supply", "Distribution & Logistics", "Marine & Offshore Fueling", "Storage & Terminal Access"].map((item, i) => (
                         <motion.a
 
-                            href="#ourservices"
+                            href="/#ourservices"
                             whileHover={{ x: 5, color: "#FF7F01" }}
                             transition={{ duration: 0.2 }}
                             className="block text-gray-300 hover:text-[#FF7F01] text-sm font-medium"
@@ -49,7 +49,7 @@ const Footer = () => {
                 <div className="space-y-3">
                     <h3 className="font-bold text-white mb-2">Company</h3>
                     <motion.a
-                        href="#aboutus"
+                        href="/#aboutus"
                         whileHover={{ x: 5, color: "#FF7F01" }}
                         transition={{ duration: 0.2 }}
                         className="block text-gray-300 hover:text-[#FF7F01] text-sm font-medium"
@@ -57,7 +57,7 @@ const Footer = () => {
                         Who we are
                     </motion.a>
                     <motion.a
-                        href="#ourservices"
+                        href="/#ourservices"
                         whileHover={{ x: 5, color: "#FF7F01" }}
                         transition={{ duration: 0.2 }}
                         className="block text-gray-300 hover:text-[#FF7F01] text-sm font-medium"
@@ -65,7 +65,7 @@ const Footer = () => {
                         Our service
                     </motion.a>
                     <motion.a
-                        href="#contactus"
+                        href="/#contactus"
                         whileHover={{ x: 5, color: "#FF7F01" }}
                         transition={{ duration: 0.2 }}
                         className="block text-gray-300 hover:text-[#FF7F01] text-sm font-medium"
@@ -73,7 +73,7 @@ const Footer = () => {
                         Contact us
                     </motion.a>
                     <motion.a
-                        href="#mission"
+                        href="/#mission"
                         whileHover={{ x: 5, color: "#FF7F01" }}
                         transition={{ duration: 0.2 }}
                         className="block text-gray-300 hover:text-[#FF7F01] text-sm font-medium"

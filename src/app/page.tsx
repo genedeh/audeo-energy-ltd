@@ -14,7 +14,7 @@ export default function Home() {
       <div id="home">
         <HeroSection />
       </div>
-      <div id="">
+      <div id="mission">
         <HomeSection />
       </div>
       <div id="aboutus">

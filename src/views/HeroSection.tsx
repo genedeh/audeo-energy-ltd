@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaOilCan, FaTruckMoving, FaShieldAlt } from "react-icons/fa";
+import {  FaTruckMoving } from "react-icons/fa";
 import { FaBoxesStacked, FaDroplet } from "react-icons/fa6";
 
 const HeroSection = () => {
     return (
-        <section className="relative w-full  h-screen flex flex-col justify-center  text-white">
+        <section className="relative lg:w-full w-screen h-screen flex flex-col justify-center  text-white">
             <Image
                 src={require("../../public/images/hero-image.jpg")}
                 alt="Petroleum Tanks"

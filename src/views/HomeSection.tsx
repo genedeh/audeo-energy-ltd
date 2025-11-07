@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const HomeSection = () => {
     return (
         <section className="relative w-full bg-transparent text-black py-20 px-6 md:px-16 lg:px-18 flex justify-start mt-20">
-            <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
+            <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -13,7 +13,7 @@ const HomeSection = () => {
                     viewport={{ once: true }}
                     className="flex justify-start"
                 >
-                    <div className="bg-black relative w-[522px] h-[348px] overflow-hidden rounded-2xl flex items-center justify-center">
+                    <div className="relative w-[522px] h-[348px] overflow-hidden rounded-2xl flex items-center justify-center">
                         <Image
                             src={require("../../public/images/home-img.png")} 
                             alt="Audeo Energy Image"

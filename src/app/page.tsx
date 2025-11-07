@@ -1,6 +1,7 @@
 "use client";
 
 import AboutUsSection from "@/views/AboutUsSection";
+import ContactUsSection from "@/views/ContactUsSection";
 import EnergySection from "@/views/EnergySection";
 import HeroSection from "@/views/HeroSection";
 import HomeSection from "@/views/HomeSection";
@@ -25,6 +26,9 @@ export default function Home() {
       </div>
       <div id="whyus">
         <WhyUsSection />
+      </div>
+      <div id="contactus">
+        <ContactUsSection />
       </div>
     </div>
   );

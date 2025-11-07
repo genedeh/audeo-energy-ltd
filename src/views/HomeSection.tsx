@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const HomeSection = () => {
     return (
-        <section className="relative w-full bg-transparent text-black py-20 px-6 md:px-16 lg:px-18 flex justify-start">
+        <section className="relative w-full bg-transparent text-black py-20 px-6 md:px-16 lg:px-18 flex justify-start mt-20">
             <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
@@ -13,13 +13,13 @@ const HomeSection = () => {
                     viewport={{ once: true }}
                     className="flex justify-start"
                 >
-                    <div className="bg-[#0A0068] w-[310px] h-[310px] rounded-2xl flex items-center justify-center">
+                    <div className="bg-black relative w-[522px] h-[348px] overflow-hidden rounded-2xl flex items-center justify-center">
                         <Image
-                            src="/icons/image-placeholder.svg" 
-                            alt="Audeo Energy Illustration"
-                            width={128}
-                            height={128}
-                            className="opacity-60"
+                            src={require("../../public/images/home-img.png")} 
+                            alt="Audeo Energy Image"
+                            width={522}
+                            height={348}
+                            className="object-cover"
                         />
                     </div>
                 </motion.div>

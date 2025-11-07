@@ -9,7 +9,7 @@ const navItems = [
     { name: "Home", icon: <FiHome />, link: "#home" },
     { name: "About Us", icon: <FiInfo />, link: "#aboutus" },
     { name: "Our Services", icon: <FiTool />, link: "#ourservices" },
-    { name: "Our People", icon: <FiUser />, link: "#ourpeople" },
+    { name: "Why Us", icon: <FiUser />, link: "#whyus" },
     { name: "Contact us", icon: <FiPhoneCall />, link: "#contactus" },
 ];
 
@@ -88,7 +88,6 @@ const Navbar = () => {
                     />
                 </motion.div>
 
-                {/* 👇 Dynamic color change applied here */}
                 <ul
                     className={`hidden md:flex space-x-10 transition-colors duration-300 ${isDarkText ? "text-black" : "text-white"
                         }`}

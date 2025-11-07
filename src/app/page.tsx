@@ -4,6 +4,7 @@ import AboutUsSection from "@/views/AboutUsSection";
 import EnergySection from "@/views/EnergySection";
 import HeroSection from "@/views/HeroSection";
 import HomeSection from "@/views/HomeSection";
+import OurServicesSection from "@/views/OurServicesSection";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       <div id="aboutus">
         <AboutUsSection />
         <EnergySection />
+      </div>
+      <div id="ourservices">
+        <OurServicesSection />
       </div>
     </div>
   );

@@ -150,7 +150,8 @@ const Navbar = () => {
                                     key={item.name}
                                     whileHover={{ scale: 1.05, x: 6 }}
                                     transition={{ type: "spring", stiffness: 250, damping: 15 }}
-                                    className={`cursor-pointer flex items-center gap-4 ${item.link === hash ? "text-[#FF7F01] font-semibold" : ""
+                                    className={`cursor-pointer flex items-center gap-4 ${isDarkText ? item.link === hash ? "text-[#FF7F01] font-semibold" : "text-black" : item.link === hash ? "text-[#FF7F01] font-semibold" : "text-white"
+                        } ${item.link === hash ? "text-[#FF7F01] font-semibold" : ""
                                         }`}
                                 >
                                     <a

@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 const HomeSection = () => {
     return (
-        <section className="relative w-full bg-transparent text-black py-20 px-6 md:px-16 lg:px-24 flex justify-start">
-            <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <section className="relative w-full bg-transparent text-black py-20 px-6 md:px-16 lg:px-18 flex justify-start">
+            <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="flex justify-center"
+                    className="flex justify-start"
                 >
                     <div className="bg-[#0A0068] w-[310px] h-[310px] rounded-2xl flex items-center justify-center">
                         <Image
@@ -24,7 +24,6 @@ const HomeSection = () => {
                     </div>
                 </motion.div>
 
-                {/* Right Text Section */}
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}

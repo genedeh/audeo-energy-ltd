@@ -116,7 +116,7 @@ const AboutUsSection = () => {
                     viewport={{ once: true }}
                     className="italic text-gray-800 font-bold border-l-4 border-[#2D0084] pl-4 mt-6"
                 >
-                    "Audeo Energy Limited is committed to being a long-term stakeholder in Africa&apos;s energy future."
+                    "Audeo Energy Limited is committed to being a long-term stakeholder in Africa&apos;s energy future"
                 </motion.p>
             </motion.div>
 

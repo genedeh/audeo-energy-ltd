@@ -31,18 +31,22 @@ const HeroSection = () => {
                     transition={{ duration: 1 }}
                     className="text-3xl md:text-5xl font-bold leading-tight max-w-xl"
                 >
-                    Trusted Petroleum Solutions for a Growing World
+                    Energising Africa&apos;s Industrial Growth
                 </motion.h1>
 
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2 }}
-                    className="text-gray-200 mt-4 max-w-md"
+                    className="text-gray-200 mt-4 max-w-xl"
                 >
-                    We&apos;re committed to delivering world-class petroleum products that
-                    support growth, development, and progress across industries and
-                    communities.
+                    Audeo Energy Limited is a distinguished petroleum products trading and supply company,
+                    delivering reliable and efficient energy solutions across Africa. With a disciplined approach,
+                    strong international partnerships, and a commitment to operational excellence, we support the continent&apos;s industrial, commercial, and economic advancement.
+                    <br />
+                    <br />
+                    Our mandate is to ensure secure access to premium petroleum products,
+                    delivered with precision, integrity, and world-class standards.
                 </motion.p>
             </div>
 
@@ -50,7 +54,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.8 }}
-                className="absolute -bottom-20 right-6 md:right-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 
+                className="absolute -bottom-48 md:-bottom-20 right-6 md:right-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 
               pointer-events-auto"
             >
                 {[

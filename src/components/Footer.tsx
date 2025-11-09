@@ -37,6 +37,7 @@ const Footer = () => {
                         <motion.a
 
                             href="/#ourservices"
+                            key={i}
                             whileHover={{ x: 5, color: "#FF7F01" }}
                             transition={{ duration: 0.2 }}
                             className="block text-gray-300 hover:text-[#FF7F01] text-sm font-medium"
@@ -87,10 +88,10 @@ const Footer = () => {
                     <p>
                         <span className="font-semibold text-white">Call:</span>{" "}
                         <a
-                            href="tel:+23400000000"
+                            href="tel:+2347079393874"
                             className="text-gray-300 hover:text-[#FF7F01] transition-colors duration-300"
                         >
-                            +234xxxxxxx
+                            +2347079393874
                         </a>
                     </p>
                     <p>

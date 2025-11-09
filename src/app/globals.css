@@ -1,31 +1,6 @@
 @import "tailwindcss";
 
-.global-font {
-  font-family: "Ysabeau SC", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.font-hand {
-  font-family: "Edu AU VIC WA NT Hand", cursive;
-}
 
 html {
   scroll-behavior: smooth;
 }
-
-.font-rubik {
-  font-family: "Rubik Vinyl", system-ui;
-}
-
-.font-bbh {
-  font-family: "BBH Sans Hegarty", sans-serif;
-}
-.bg-primary {
-  background-color: #000051;
-}
-.text-primary {
-  color: #000051;
-}
-

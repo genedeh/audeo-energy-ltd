@@ -41,16 +41,15 @@ const ContactUsSection = () => {
                 <p className="text-gray-700">
                     <span className="font-semibold">Call:</span>{" "}
                     <a
-                        href="tel:+23400000000"
+                        href="tel:+2347079393874"
                         className="text-black font-semibold hover:text-[#FF7F01] transition-colors duration-300"
                     >
-                        +234xxxxxxx
+                        +2347079393874
                     </a>
                 </p>
 
                 <p className="text-gray-700 leading-relaxed">
-                    <span className="font-semibold">Headquarters:</span> 9B Harriman
-                    Street, Lekki Phase 1, Lagos State, Nigeria.
+                    <span className="font-semibold">Headquarters:</span> 9B Hope Harriman Street, Lekki Phase 1. Lagos State Nigeria.
                 </p>
             </motion.div>
 
@@ -69,8 +68,8 @@ const ContactUsSection = () => {
                     height="350"
                     className="rounded-2xl shadow-lg border-0"
                     loading="lazy"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=3.448%2C6.431%2C3.461%2C6.442&layer=mapnik&marker=6.435%2C3.455"
-                ></iframe>
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=3.4470%2C6.4340%2C3.4630%2C6.4450&layer=mapnik&marker=6.4395%2C3.4550">
+                </iframe>
             </motion.div>
         </section>
     );

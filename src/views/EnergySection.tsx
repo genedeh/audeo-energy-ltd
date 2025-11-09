@@ -12,7 +12,7 @@ const services = [
 
 const EnergySection = () => {
     return (
-        <section className="w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 px-6 md:px-20 pb-20 bg-transparent overflow-hidden">
+        <section className="w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-20 px-6 md:px-16 lg:px-0 pb-20 bg-transparent overflow-hidden">
             <motion.div
                 initial={{ opacity: 0, x: -60 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -42,7 +42,10 @@ const EnergySection = () => {
                 </h2>
 
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-                    We provide end-to-end energy supply solutions, including:
+                    Driving energy reliability. Enabling opportunity. Powering tomorrow.
+                </p>
+                <p className="text-[#2D0084] font-extrabold md:text-lg leading-relaxed">
+                    Core Capabilities
                 </p>
 
                 <ul className="space-y-4">
@@ -67,7 +70,8 @@ const EnergySection = () => {
                     viewport={{ once: true }}
                     className="italic text-gray-800 font-bold border-l-4 border-[#2D0084] pl-4 mt-6"
                 >
-                    “Our platform streamlines petroleum sourcing, distribution, and operational coordination, ensuring efficient workflows and transparent collaboration among suppliers, partners, and clients.”
+                    "Geographic Reach
+                    Strategic supply presence across Africa&apos;s key commercial and maritime corridors."
                 </motion.p>
             </motion.div>
         </section>

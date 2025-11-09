@@ -17,22 +17,27 @@ const OurServicesSection = () => {
         {
             title: "Trading & Supply",
             description:
-                "Reliable sourcing and supply of high-quality refined petroleum products (PMS, Diesel).",
+                "Reliable sourcing and supply of high-quality refined petroleu products(PMS, Diesel / AGO, Jet Fuel / ATK, LPFO, HPFO, LPG and Condensates).",
         },
         {
             title: "Distribution & Logistics",
             description:
-                "Seamless logistics from international markets to client facilities.",
+                "Seamless logistics from international markets to client facilities — supported by trusted marine, depot, and inland logistics networks.",
         },
         {
             title: "Marine & Offshore Fueling",
             description:
-                "Fleet and offshore supply solutions for maritime operators and energy companies.",
+                "Fleet and offshore supply solutions for maritime operators, offshore assets, and energy companies.",
         },
         {
             title: "Storage & Terminal Access",
             description:
-                "Access to strategic storage facilities enabling consistent supply and optimal delivery planning.",
+                "Access to strategic storage facilities enabling consistent supply, security of product, and optimal delivery planning.",
+        },
+        {
+            title: "Energy Procurement Advisory",
+            description:
+                "Market intelligence, procurement strategy, and price-risk advisory tailored to institutional and industrial clients.",
         },
     ];
 
@@ -139,7 +144,7 @@ const OurServicesSection = () => {
                                 </h3>
                                 <p className="text-sm md:text-base text-white mt-2">
                                     Reliable sourcing and supply of high-quality refined petroleum
-                                    products (PMS, Diesel).
+                                    products (PMS, Diesel / AGO, Jet Fuel / ATK, LPFO, HPFO, LPG and Condensates).
                                 </p>
                             </motion.div>
                         </motion.div>
@@ -160,8 +165,7 @@ const OurServicesSection = () => {
                                     Distribution & Logistics
                                 </h3>
                                 <p className="text-sm md:text-base text-white mt-2">
-                                    Seamless logistics from international markets to client
-                                    facilities.
+                                    Seamless logistics from international markets to client facilities — supported by trusted marine, depot, and inland logistics networks.
                                 </p>
                             </motion.div>
                         </motion.div>
@@ -182,8 +186,7 @@ const OurServicesSection = () => {
                                     Marine & Offshore Fueling
                                 </h3>
                                 <p className="text-sm md:text-base text-white mt-2">
-                                    Fleet and offshore supply solutions for maritime operators and
-                                    energy companies.
+                                    Fleet and offshore supply solutions for maritime operators, offshore assets, and energy companies.
                                 </p>
                             </motion.div>
                         </motion.div>
@@ -204,8 +207,28 @@ const OurServicesSection = () => {
                                     Storage & Terminal Access
                                 </h3>
                                 <p className="text-sm md:text-base text-white mt-2">
-                                    Access to strategic storage facilities enabling consistent
-                                    supply and optimal delivery planning.
+                                    Access to strategic storage facilities enabling consistent supply, security of product, and optimal delivery planning.
+                                </p>
+                            </motion.div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, delay: 0.4 }}
+                            viewport={{ once: true }}
+                            className="absolute -right-8 md:-right-44 lg:right-35 bottom-6 md:-bottom-35 w-[320px] md:w-[380px] lg:w-[420px]"
+                        >
+                            <motion.div
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ type: "spring", stiffness: 220 }}
+                                className="bg-[#0000B333] backdrop-blur-sm p-5 shadow-lg cursor-pointer"
+                            >
+                                <h3 className="text-[#000051] font-semibold text-lg md:text-xl">
+                                    Energy Procurement Advisory
+                                </h3>
+                                <p className="text-sm md:text-base text-white mt-2">
+                                    Market intelligence, procurement strategy, and price-risk advisory tailored to institutional and industrial clients.
                                 </p>
                             </motion.div>
                         </motion.div>

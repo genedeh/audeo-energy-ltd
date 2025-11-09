@@ -30,7 +30,7 @@ const HomeSection = () => {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                    <h2 className="text-2xl md:text-4xl font-bold mb-10">
                         Welcome to{" "}
                         <span className="inline-flex items-center">
                             <Image
@@ -43,17 +43,9 @@ const HomeSection = () => {
                         </span>
                     </h2>
 
-                    <p className="text-gray-700 leading-relaxed mb-4">
-                        At Audeo Energy Ltd, we are committed to powering progress across
-                        Africa through reliable, efficient, and accessible petroleum and
-                        energy solutions.
-                    </p>
-
-                    <p className="text-gray-700 leading-relaxed">
-                        We take pride in being a trusted partner in the supply and
-                        distribution of high-quality petroleum products, ensuring that
-                        businesses, industries, and communities receive the energy they need
-                        to grow and thrive.
+                    <p className="text-gray-700 text-3xl leading-relaxed mb-4">
+                        Our mandate is to ensure secure access to premium petroleum products,
+                        delivered with precision, integrity, and world-class standards.
                     </p>
                 </motion.div>
             </div>

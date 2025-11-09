@@ -14,17 +14,17 @@ export default function Home() {
       <div id="home">
         <HeroSection />
       </div>
-      <div id="mission">
-        <HomeSection />
-      </div>
-      <div id="aboutus">
-        <AboutUsSection />
+      <div id="mission" className="mt-40">
+        {/* <HomeSection /> */}
         <EnergySection />
       </div>
-      <div id="ourservices">
+      <div id="aboutus" className="mt-20">
+        <AboutUsSection />
+      </div>
+      <div id="ourservices" className="mt-30">
         <OurServicesSection />
       </div>
-      <div id="whyus">
+      <div id="whyus" className="mt-30">
         <WhyUsSection />
       </div>
       <div id="contactus">

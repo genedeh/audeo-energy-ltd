@@ -4,19 +4,56 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Audeo Energy Ltd. | Reliable Petroleum & Energy Solutions",
+  title: "Audeo Energy Limited | Petroleum Trading & Energy Solutions Across Africa",
   description:
-    "At Audeo Energy Ltd, we are committed to powering progress across Africa through reliable, efficient, and accessible petroleum and energy solutions.",
+    "Audeo Energy Limited is a trusted petroleum trading and supply company delivering reliable, efficient, and sustainable energy solutions across Africa. We provide refined petroleum products, marine fueling, storage, and energy procurement advisory with world-class standards and integrity.",
+  keywords: [
+    "Audeo Energy",
+    "Audeo Energy Limited",
+    "petroleum trading company in Africa",
+    "energy solutions Nigeria",
+    "refined petroleum products",
+    "diesel and jet fuel supply",
+    "bulk fuel distribution",
+    "marine fueling",
+    "energy procurement advisory",
+    "oil and gas trading company Africa",
+    "energy logistics Nigeria",
+    "petroleum storage terminals",
+    "fuel oil supply",
+    "Audeo Energy Lekki",
+  ],
   openGraph: {
-    title: "Audeo Energy Ltd. | Reliable Petroleum & Energy Solutions",
+    title: "Audeo Energy Limited | Powering Africa’s Growth Through Reliable Energy",
     description:
-      "We take pride in being a trusted partner in the supply and distribution of high-quality petroleum products, ensuring that businesses and communities receive the energy they need to grow and thrive.",
+      "Established in 2006, Audeo Energy Limited is a leading petroleum trading and distribution company serving Africa’s industrial and commercial sectors. We specialize in refined petroleum supply, marine fueling, storage, and procurement advisory — driving reliability, sustainability, and growth across the continent.",
     url: "https://www.audeoenergy.com",
-    siteName: "Audeo Energy Ltd.",
+    siteName: "Audeo Energy Limited",
     locale: "en_NG",
     type: "website",
+    images: [
+      {
+        url: "/images/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Audeo Energy Limited – Reliable Petroleum and Energy Solutions Across Africa",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Audeo Energy Limited | Reliable Petroleum & Energy Solutions in Africa",
+    description:
+      "Audeo Energy Limited provides petroleum product trading, marine fueling, and energy supply solutions across Africa — delivering reliability, efficiency, and sustainability.",
+    images: ["/images/logo.jpg"],
+  },
+  alternates: {
+    canonical: "https://www.audeoenergy.com",
+  },
+  metadataBase: new URL("https://www.audeoenergy.com"),
+  authors: [{ name: "Audeo Energy Limited", url: "https://www.audeoenergy.com" }],
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{

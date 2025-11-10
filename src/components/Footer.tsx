@@ -25,15 +25,15 @@ const Footer = () => {
                     <div>
                         <h3 className="font-bold text-white mb-1">About us</h3>
                         <p className="text-sm text-gray-300 leading-relaxed">
-                            Audeo Energy Limited is a forward-thinking energy trading organization
-                            specializing in the supply and distribution of refined petroleum products.
+                            Audeo Energy Limited is a forward-thinking energy trading organisation
+                            specialising in the supply and distribution of refined petroleum products.
                         </p>
                     </div>
                 </div>
 
                 <div className="space-y-3">
                     <h3 className="font-bold text-white mb-2">Service</h3>
-                    {["Trading & Supply", "Distribution & Logistics", "Marine & Offshore Fueling", "Storage & Terminal Access"].map((item, i) => (
+                    {["Trading & Supply", "Distribution & Logistics", "Marine & Offshore fuelling", "Storage & Terminal Access"].map((item, i) => (
                         <motion.a
 
                             href="/#ourservices"

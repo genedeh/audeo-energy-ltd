@@ -5,7 +5,7 @@ const services = [
     "Refined Petroleum Product Trading",
     "Bulk Supply & Distribution",
     "Storage & Terminal Access",
-    "Marine & Offshore Fueling",
+    "Marine & Offshore fuelling",
     "Energy Procurement Advisory",
 ];
 
@@ -71,7 +71,7 @@ const EnergySection = () => {
                     className="italic text-gray-800 font-bold border-l-4 border-[#2D0084] pl-4 mt-6"
                 >
                     "Geographic Reach
-                    Strategic supply presence across Africa&apos;s key commercial and maritime corridors."
+                    Strategic supply presence across Africa&apos;s key commercial and maritime corridors"
                 </motion.p>
             </motion.div>
         </section>

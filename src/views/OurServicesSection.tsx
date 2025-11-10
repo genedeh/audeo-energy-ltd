@@ -25,7 +25,7 @@ const OurServicesSection = () => {
                 "Seamless logistics from international markets to client facilities — supported by trusted marine, depot, and inland logistics networks.",
         },
         {
-            title: "Marine & Offshore Fueling",
+            title: "Marine & Offshore fuelling",
             description:
                 "Fleet and offshore supply solutions for maritime operators, offshore assets, and energy companies.",
         },
@@ -142,7 +142,7 @@ const OurServicesSection = () => {
                                 <h3 className="text-[#000051] font-semibold text-lg md:text-xl">
                                     Trading & Supply
                                 </h3>
-                                <p className="text-sm md:text-base text-white mt-2">
+                                <p className="text-sm md:text-base font-serif font-semibold text-white mt-2">
                                     Reliable sourcing and supply of high-quality refined petroleum
                                     products (PMS, Diesel / AGO, Jet Fuel / ATK, LPFO, HPFO, LPG and Condensates).
                                 </p>
@@ -164,7 +164,7 @@ const OurServicesSection = () => {
                                 <h3 className="text-[#000051] font-semibold text-lg md:text-xl">
                                     Distribution & Logistics
                                 </h3>
-                                <p className="text-sm md:text-base text-white mt-2">
+                                <p className="text-sm md:text-base font-serif font-semibold text-white mt-2">
                                     Seamless logistics from international markets to client facilities — supported by trusted marine, depot, and inland logistics networks.
                                 </p>
                             </motion.div>
@@ -183,9 +183,9 @@ const OurServicesSection = () => {
                                 className="bg-[#0000B333] backdrop-blur-sm p-5 shadow-lg cursor-pointer"
                             >
                                 <h3 className="text-[#000051] font-semibold text-lg md:text-xl">
-                                    Marine & Offshore Fueling
+                                    Marine & Offshore fuelling
                                 </h3>
-                                <p className="text-sm md:text-base text-white mt-2">
+                                <p className="text-sm md:text-base font-serif font-semibold text-white mt-2">
                                     Fleet and offshore supply solutions for maritime operators, offshore assets, and energy companies.
                                 </p>
                             </motion.div>
@@ -206,7 +206,7 @@ const OurServicesSection = () => {
                                 <h3 className="text-[#000051] font-semibold text-lg md:text-xl">
                                     Storage & Terminal Access
                                 </h3>
-                                <p className="text-sm md:text-base text-white mt-2">
+                                <p className="text-sm md:text-base font-serif font-semibold text-white mt-2">
                                     Access to strategic storage facilities enabling consistent supply, security of product, and optimal delivery planning.
                                 </p>
                             </motion.div>
@@ -227,7 +227,7 @@ const OurServicesSection = () => {
                                 <h3 className="text-[#000051] font-semibold text-lg md:text-xl">
                                     Energy Procurement Advisory
                                 </h3>
-                                <p className="text-sm md:text-base text-white mt-2">
+                                <p className="text-sm md:text-base font-serif font-semibold text-white mt-2">
                                     Market intelligence, procurement strategy, and price-risk advisory tailored to institutional and industrial clients.
                                 </p>
                             </motion.div>

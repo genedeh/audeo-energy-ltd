@@ -17,7 +17,7 @@ const AboutUsSection = () => {
                 </h2>
 
                 <p className="text-gray-600 leading-relaxed">
-                    Audeo Energy Limited is a forward-thinking energy trading organization specializing in the sourcing, supply,
+                    Audeo Energy Limited is a forward-thinking energy trading organisation specialising in the sourcing, supply,
                     and distribution of refined petroleum products. Established in 2006, our business is built on trust, transparency,
                     and a performance-driven culture, delivering consistent value to clients and partners across the continent.
                 </p>
@@ -54,7 +54,7 @@ const AboutUsSection = () => {
                         </div>
                         <p className="text-gray-700 leading-relaxed pl-9">
                             To become Africa&apos;s most trusted and efficient petroleum trading
-                            partner, recognized for operational excellence, reliability, and
+                            partner, recognised for operational excellence, reliability, and
                             ethical practice.
                         </p>
                     </motion.div>

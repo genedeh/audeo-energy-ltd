@@ -100,7 +100,7 @@ const WhyUsSection = () => {
                         </h4>
                         <p className="text-gray-700 leading-relaxed">
                             Audeo Energy Limited is committed to ethical trade practices,
-                            responsible resource utilization, and supporting the transition toward
+                            responsible resource utilisation, and supporting the transition toward
                             cleaner and more efficient energy solutions across the continent. We
                             operate with integrity, environmental consideration, and a long-term
                             perspective.

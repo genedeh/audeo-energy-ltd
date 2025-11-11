@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo.jpg",
+        url: "https://audeoenergy.com/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Audeo Energy Limited – Reliable Petroleum and Energy Solutions Across Africa",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Audeo Energy Limited | Reliable Petroleum & Energy Solutions in Africa",
     description:
       "Audeo Energy Limited provides petroleum product trading, marine fueling, and energy supply solutions across Africa — delivering reliability, efficiency, and sustainability.",
-    images: ["/images/logo.jpg"],
+    images: ["https://audeoenergy.com/images/logo.png"],
   },
   alternates: {
     canonical: "https://www.audeoenergy.com",

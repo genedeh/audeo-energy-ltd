@@ -6,13 +6,13 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Audeo Energy Limited | Petroleum Trading & Energy Solutions Across Africa",
   description:
-    "Audeo Energy Limited is a trusted petroleum trading and supply company delivering reliable, efficient, and sustainable energy solutions across Africa. We provide refined petroleum products, marine fueling, storage, and energy procurement advisory with world-class standards and integrity.",
+    "Audeo Energy Limited is a forward-thinking energy trading company in Nigeria, recognised as a leading Crude oil supplier, Petroleum product supplier, and Bulk oil distributor, providing reliable refined petroleum solutions to clients nationwide.",
   keywords: [
-    "Audeo Energy",
-    "Audeo Energy Limited",
     "Crude oil supplier",
     "Petroleum product supplier",
-    "Bulk oil distributor"
+    "Bulk oil distributor",
+    "Audeo Energy",
+    "Audeo Energy Limited",
   ],
   openGraph: {
     title: "Audeo Energy Limited | Powering Africa’s Growth Through Reliable Energy",

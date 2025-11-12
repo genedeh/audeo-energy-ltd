@@ -27,6 +27,9 @@ const Footer = () => {
                         <p className="text-sm text-gray-300 leading-relaxed">
                             Audeo Energy Limited is a forward-thinking energy trading organisation
                             specialising in the supply and distribution of refined petroleum products.
+                            As a trusted <strong  className="text-[#FF7F01]">crude oil supplier</strong>, <strong  className="text-[#FF7F01]">petroleum product supplier</strong>,
+                            and <strong  className="text-[#FF7F01]">bulk oil distributor</strong> across Africa, we are committed to delivering
+                            reliable and efficient energy solutions that power industries and communities.
                         </p>
                     </div>
                 </div>

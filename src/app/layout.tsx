@@ -10,20 +10,8 @@ export const metadata: Metadata = {
   keywords: [
     "Audeo Energy",
     "Audeo Energy Limited",
-    "petroleum trading company in Africa",
-    "energy solutions Nigeria",
-    "refined petroleum products",
-    "diesel and jet fuel supply",
-    "bulk fuel distribution",
-    "marine fueling",
-    "energy procurement advisory",
-    "oil and gas trading company Africa",
-    "energy logistics Nigeria",
-    "petroleum storage terminals",
-    "fuel oil supply",
-    "Audeo Energy Lekki",
     "Crude oil supplier",
-    "Petroleum product supplier ",
+    "Petroleum product supplier",
     "Bulk oil distributor"
   ],
   openGraph: {
@@ -65,6 +53,29 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Audeo Energy Limited",
+            "url": "https://www.audeoenergy.com",
+            "logo": "https://www.audeoenergy.com/images/logo.png",
+            "description": "Audeo Energy Limited is a leading petroleum trading and supply company delivering reliable, efficient, and sustainable energy solutions across Africa.",
+            "foundingDate": "2006",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "9B Hope Harriman Street Lekki Phase 1",
+              "addressLocality": "Lagos",
+              "addressCountry": "NG"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "info@audeoenergy.com",
+              "telephone": "+2347079393874",
+              "contactType": "Customer Support"
+            }
+          })
+        }} />
       </head>
       <body className="bg-white global-font min-h-screen"  >
         <Navbar />

@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     "petroleum storage terminals",
     "fuel oil supply",
     "Audeo Energy Lekki",
+    "Crude oil supplier",
+    "Petroleum product supplier ",
+    "Bulk oil distributor"
   ],
   openGraph: {
     title: "Audeo Energy Limited | Powering Africa’s Growth Through Reliable Energy",

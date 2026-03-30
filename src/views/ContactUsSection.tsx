@@ -41,10 +41,17 @@ const ContactUsSection = () => {
                 <p className="text-gray-700">
                     <span className="font-semibold">Call:</span>{" "}
                     <a
-                        href="tel:+2347079393874"
+                        href="tel:+2347065768290"
                         className="text-black font-semibold hover:text-[#FF7F01] transition-colors duration-300"
                     >
-                        +2347079393874
+                        +234 706 576 8290
+                    </a>
+                    {" / "}
+                    <a
+                        href="tel:+2347041140254"
+                        className="text-black font-semibold hover:text-[#FF7F01] transition-colors duration-300"
+                    >
+                        +234 704 114 0254
                     </a>
                 </p>
 

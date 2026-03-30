@@ -71,7 +71,7 @@ export default function RootLayout({
             "contactPoint": {
               "@type": "ContactPoint",
               "email": "info@audeoenergy.com",
-              "telephone": "+2347079393874",
+              "telephone": ["+2347065768290", "+2347041140254"],
               "contactType": "Customer Support"
             }
           })
